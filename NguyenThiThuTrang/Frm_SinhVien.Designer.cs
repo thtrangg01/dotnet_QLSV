@@ -295,7 +295,7 @@ namespace NguyenThiThuTrang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1017, 574);
+            this.ClientSize = new System.Drawing.Size(889, 574);
             this.Controls.Add(this.box_GioiTinh);
             this.Controls.Add(this.btn_Thoat);
             this.Controls.Add(this.btn_Xoa);

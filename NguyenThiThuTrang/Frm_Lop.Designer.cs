@@ -41,7 +41,6 @@ namespace NguyenThiThuTrang
             this.cbo_MaKhoa = new System.Windows.Forms.ComboBox();
             this.Grid_Lop = new System.Windows.Forms.DataGridView();
             this.btn_Them = new System.Windows.Forms.Button();
-            this.btn_Luu = new System.Windows.Forms.Button();
             this.btn_Sua = new System.Windows.Forms.Button();
             this.btn_Xoa = new System.Windows.Forms.Button();
             this.btn_Thoat = new System.Windows.Forms.Button();
@@ -160,41 +159,34 @@ namespace NguyenThiThuTrang
             this.btn_Them.TabIndex = 5;
             this.btn_Them.Text = "Thêm";
             this.btn_Them.UseVisualStyleBackColor = true;
-            // 
-            // btn_Luu
-            // 
-            this.btn_Luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btn_Luu.Location = new System.Drawing.Point(609, 255);
-            this.btn_Luu.Name = "btn_Luu";
-            this.btn_Luu.Size = new System.Drawing.Size(92, 36);
-            this.btn_Luu.TabIndex = 5;
-            this.btn_Luu.Text = "Lưu";
-            this.btn_Luu.UseVisualStyleBackColor = true;
+            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
             // btn_Sua
             // 
             this.btn_Sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btn_Sua.Location = new System.Drawing.Point(609, 297);
+            this.btn_Sua.Location = new System.Drawing.Point(609, 272);
             this.btn_Sua.Name = "btn_Sua";
             this.btn_Sua.Size = new System.Drawing.Size(92, 36);
             this.btn_Sua.TabIndex = 5;
             this.btn_Sua.Text = "Sửa";
             this.btn_Sua.UseVisualStyleBackColor = true;
+            this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
             // 
             // btn_Xoa
             // 
             this.btn_Xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btn_Xoa.Location = new System.Drawing.Point(610, 339);
+            this.btn_Xoa.Location = new System.Drawing.Point(609, 329);
             this.btn_Xoa.Name = "btn_Xoa";
             this.btn_Xoa.Size = new System.Drawing.Size(92, 36);
             this.btn_Xoa.TabIndex = 5;
             this.btn_Xoa.Text = "Xóa";
             this.btn_Xoa.UseVisualStyleBackColor = true;
+            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
             // 
             // btn_Thoat
             // 
             this.btn_Thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btn_Thoat.Location = new System.Drawing.Point(610, 381);
+            this.btn_Thoat.Location = new System.Drawing.Point(609, 386);
             this.btn_Thoat.Name = "btn_Thoat";
             this.btn_Thoat.Size = new System.Drawing.Size(92, 36);
             this.btn_Thoat.TabIndex = 5;
@@ -219,7 +211,6 @@ namespace NguyenThiThuTrang
             this.Controls.Add(this.btn_Thoat);
             this.Controls.Add(this.btn_Xoa);
             this.Controls.Add(this.btn_Sua);
-            this.Controls.Add(this.btn_Luu);
             this.Controls.Add(this.btn_Them);
             this.Controls.Add(this.Grid_Lop);
             this.Controls.Add(this.cbo_MaKhoa);
@@ -255,7 +246,6 @@ namespace NguyenThiThuTrang
         private System.Windows.Forms.ComboBox cbo_MaKhoa;
         private System.Windows.Forms.DataGridView Grid_Lop;
         private System.Windows.Forms.Button btn_Them;
-        private System.Windows.Forms.Button btn_Luu;
         private System.Windows.Forms.Button btn_Sua;
         private System.Windows.Forms.Button btn_Xoa;
         private System.Windows.Forms.Button btn_Thoat;
