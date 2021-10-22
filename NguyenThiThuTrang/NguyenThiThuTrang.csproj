@@ -53,11 +53,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BC_HeDaoTao.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BC_HeDaoTao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BC_KhoaVien.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BC_KhoaVien.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BC_Lop.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BC_Lop.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BC_Sinhvien.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BC_Sinhvien.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Frm_BaoCao.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_BaoCao.Designer.cs">
       <DependentUpon>Frm_BaoCao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_BaoCao_HeDT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BaoCao_HeDT.Designer.cs">
+      <DependentUpon>Frm_BaoCao_HeDT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_BaoCao_Lop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BaoCao_Lop.Designer.cs">
+      <DependentUpon>Frm_BaoCao_Lop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_BaoCao_SV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BaoCao_SV.Designer.cs">
+      <DependentUpon>Frm_BaoCao_SV.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_DangNhap.cs">
       <SubType>Form</SubType>
@@ -104,8 +146,33 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BC_HeDaoTao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BC_HeDaoTao.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BC_KhoaVien.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BC_KhoaVien.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BC_Lop.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BC_Lop.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BC_Sinhvien.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BC_Sinhvien.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_BaoCao.resx">
       <DependentUpon>Frm_BaoCao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_BaoCao_HeDT.resx">
+      <DependentUpon>Frm_BaoCao_HeDT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_BaoCao_Lop.resx">
+      <DependentUpon>Frm_BaoCao_Lop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_BaoCao_SV.resx">
+      <DependentUpon>Frm_BaoCao_SV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_DangNhap.resx">
       <DependentUpon>Frm_DangNhap.cs</DependentUpon>
@@ -149,6 +216,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -22,23 +22,12 @@ namespace NguyenThiThuTrang
         private void Grid_Lop_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
-            txt_MaLop.Clear();
-            txt_MaLop.DataBindings.Add("Text", Grid_Lop.DataSource, "MALOP");
-
-            txt_TenLop.Clear();
-            txt_TenLop.DataBindings.Add("Text", Grid_Lop.DataSource, "TENLOP");
-
-            txt_ghichu.Clear();
-            txt_ghichu.DataBindings.Add("Text", Grid_Lop.DataSource, "GHICHU");
-
-            txt_CVHT.Clear();
-            txt_CVHT.DataBindings.Add("Text", Grid_Lop.DataSource, "CVHT");
-
-            cbo_MaKhoa.DataBindings.Add("Text", Grid_Lop.DataSource, "MAKHOA");
+            
         }
 
         private void LoadLopData()
         {
+            kn.KetNoi_Dulieu();
             Grid_Lop.DataSource = kn.Lay_DulieuBang("select * from LOP");
             cbo_MaKhoa.DataSource = kn.Lay_DulieuBang("select MAKHOA, TENKHOA from KHOAVIEN ");
             cbo_MaKhoa.DisplayMember = "TENKHOA";
@@ -120,7 +109,7 @@ namespace NguyenThiThuTrang
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
             string maLop = txt_MaLop.Text;
-            string prepare = "delete from LOP where MALOP = {0}";
+            string prepare = "delete from LOP where MALOP = '{0}'";
             string sql = String.Format(prepare, maLop);
 
             DialogResult confirmDialogResult = MessageBox.Show("bạn muốn xóa mã lớp " + maLop);
@@ -135,6 +124,8 @@ namespace NguyenThiThuTrang
                     MessageBox.Show(exception.Message);
                 }
             }
+
+            LoadLopData();
         }
     }
 }

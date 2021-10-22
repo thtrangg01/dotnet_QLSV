@@ -1,7 +1,7 @@
 ﻿
 namespace NguyenThiThuTrang
 {
-    partial class Frm_BaoCao
+    partial class Frm_BaoCao_SV
     {
         /// <summary>
         /// Required designer variable.
@@ -29,36 +29,35 @@ namespace NguyenThiThuTrang
         /// </summary>
         private void InitializeComponent()
         {
-            this.view_Baocao = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.crv = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.SuspendLayout();
             // 
-            // view_Baocao
+            // crv
             // 
-            this.view_Baocao.ActiveViewIndex = -1;
-            this.view_Baocao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.view_Baocao.Cursor = System.Windows.Forms.Cursors.Default;
-            this.view_Baocao.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.view_Baocao.Location = new System.Drawing.Point(0, 0);
-            this.view_Baocao.Name = "view_Baocao";
-            this.view_Baocao.Size = new System.Drawing.Size(800, 450);
-            this.view_Baocao.TabIndex = 0;
-            this.view_Baocao.Load += new System.EventHandler(this.view_Baocao_Load);
+            this.crv.ActiveViewIndex = -1;
+            this.crv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.crv.Cursor = System.Windows.Forms.Cursors.Default;
+            this.crv.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.crv.Location = new System.Drawing.Point(0, 0);
+            this.crv.Name = "crv";
+            this.crv.Size = new System.Drawing.Size(800, 450);
+            this.crv.TabIndex = 0;
             // 
-            // Frm_BaoCao
+            // Frm_BaoCao_SV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.view_Baocao);
-            this.Name = "Frm_BaoCao";
-            this.Text = "Frm_BaoCao";
-            this.Load += new System.EventHandler(this.Frm_BaoCao_Load);
+            this.Controls.Add(this.crv);
+            this.Name = "Frm_BaoCao_SV";
+            this.Text = "Frm_BaoCao_SV";
+            this.Load += new System.EventHandler(this.Frm_BaoCao_SV_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private CrystalDecisions.Windows.Forms.CrystalReportViewer view_Baocao;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer crv;
     }
 }

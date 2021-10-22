@@ -75,7 +75,7 @@ namespace NguyenThiThuTrang
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
-            string sql_Luu = "Insert into HEDAOTAO values ('" + txt_MaHe.Text + "', '" + txt_TenHe.Text + "', " + num_MucHP.Value + " , " + num_SoNam.Value + " '" + txt_Ghichu.Text + "') ";
+            string sql_Luu = "Insert into HEDAOTAO values ('" + txt_MaHe.Text + "', '" + txt_TenHe.Text + "', " + num_MucHP.Value + " , " + num_SoNam.Value + " ,'" + txt_Ghichu.Text + "') ";
             kn.ThucThi(sql_Luu);
             LoadHEDTData();
         }

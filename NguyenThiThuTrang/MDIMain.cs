@@ -143,8 +143,7 @@ namespace NguyenThiThuTrang
 
         private void mnu_BaoCao_Click(object sender, EventArgs e)
         {
-            Frm_BaoCao frm_BaoCao = new Frm_BaoCao();
-            frm_BaoCao.Show();
+          
         }
 
         private void mnu_TimKiem_Click(object sender, EventArgs e)
@@ -156,6 +155,30 @@ namespace NguyenThiThuTrang
         private void mnu_Thoat_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void báoCáoKhoaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_BaoCao baoCao = new Frm_BaoCao();
+            baoCao.Show();
+        }
+
+        private void mnu_baocao_lop_Click(object sender, EventArgs e)
+        {
+            Frm_BaoCao_Lop bc = new Frm_BaoCao_Lop();
+            bc.Show();
+        }
+
+        private void mnu_baocao_hedt_Click(object sender, EventArgs e)
+        {
+            Frm_BaoCao_HeDT bc = new Frm_BaoCao_HeDT();
+            bc.Show();
+        }
+
+        private void mnu_baocao_sv_Click(object sender, EventArgs e)
+        {
+            Frm_BaoCao_SV bc = new Frm_BaoCao_SV();
+            bc.Show();
         }
     }
 }

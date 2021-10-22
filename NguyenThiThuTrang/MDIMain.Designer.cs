@@ -77,7 +77,9 @@ namespace NguyenThiThuTrang
             this.mnu_Khoa = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_HeDT = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_BaoCao = new System.Windows.Forms.ToolStripMenuItem();
+            this.báoCáoKhoaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_TimKiem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnu_Thoat = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.newToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -90,7 +92,9 @@ namespace NguyenThiThuTrang
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.mnu_Thoat = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnu_baocao_lop = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnu_baocao_hedt = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnu_baocao_sv = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -481,10 +485,22 @@ namespace NguyenThiThuTrang
             // 
             // mnu_BaoCao
             // 
+            this.mnu_BaoCao.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.báoCáoKhoaToolStripMenuItem,
+            this.mnu_baocao_lop,
+            this.mnu_baocao_hedt,
+            this.mnu_baocao_sv});
             this.mnu_BaoCao.Name = "mnu_BaoCao";
             this.mnu_BaoCao.Size = new System.Drawing.Size(63, 20);
             this.mnu_BaoCao.Text = "Báo Cáo";
             this.mnu_BaoCao.Click += new System.EventHandler(this.mnu_BaoCao_Click);
+            // 
+            // báoCáoKhoaToolStripMenuItem
+            // 
+            this.báoCáoKhoaToolStripMenuItem.Name = "báoCáoKhoaToolStripMenuItem";
+            this.báoCáoKhoaToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.báoCáoKhoaToolStripMenuItem.Text = "Báo Cáo Khoa";
+            this.báoCáoKhoaToolStripMenuItem.Click += new System.EventHandler(this.báoCáoKhoaToolStripMenuItem_Click);
             // 
             // mnu_TimKiem
             // 
@@ -492,6 +508,13 @@ namespace NguyenThiThuTrang
             this.mnu_TimKiem.Size = new System.Drawing.Size(69, 20);
             this.mnu_TimKiem.Text = "Tìm Kiếm";
             this.mnu_TimKiem.Click += new System.EventHandler(this.mnu_TimKiem_Click);
+            // 
+            // mnu_Thoat
+            // 
+            this.mnu_Thoat.Name = "mnu_Thoat";
+            this.mnu_Thoat.Size = new System.Drawing.Size(49, 20);
+            this.mnu_Thoat.Text = "Thoát";
+            this.mnu_Thoat.Click += new System.EventHandler(this.mnu_Thoat_Click);
             // 
             // toolStrip
             // 
@@ -592,12 +615,26 @@ namespace NguyenThiThuTrang
             this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
             this.toolStripStatusLabel.Text = "Status";
             // 
-            // mnu_Thoat
+            // mnu_baocao_lop
             // 
-            this.mnu_Thoat.Name = "mnu_Thoat";
-            this.mnu_Thoat.Size = new System.Drawing.Size(49, 20);
-            this.mnu_Thoat.Text = "Thoát";
-            this.mnu_Thoat.Click += new System.EventHandler(this.mnu_Thoat_Click);
+            this.mnu_baocao_lop.Name = "mnu_baocao_lop";
+            this.mnu_baocao_lop.Size = new System.Drawing.Size(182, 22);
+            this.mnu_baocao_lop.Text = "Báo Cáo Lớp";
+            this.mnu_baocao_lop.Click += new System.EventHandler(this.mnu_baocao_lop_Click);
+            // 
+            // mnu_baocao_hedt
+            // 
+            this.mnu_baocao_hedt.Name = "mnu_baocao_hedt";
+            this.mnu_baocao_hedt.Size = new System.Drawing.Size(182, 22);
+            this.mnu_baocao_hedt.Text = "Báo Cáo Hệ Đào Tạo";
+            this.mnu_baocao_hedt.Click += new System.EventHandler(this.mnu_baocao_hedt_Click);
+            // 
+            // mnu_baocao_sv
+            // 
+            this.mnu_baocao_sv.Name = "mnu_baocao_sv";
+            this.mnu_baocao_sv.Size = new System.Drawing.Size(182, 22);
+            this.mnu_baocao_sv.Text = "Báo Cáo Sinh Vièn";
+            this.mnu_baocao_sv.Click += new System.EventHandler(this.mnu_baocao_sv_Click);
             // 
             // MDIMain
             // 
@@ -685,6 +722,10 @@ namespace NguyenThiThuTrang
         private System.Windows.Forms.ToolStripMenuItem mnu_BaoCao;
         private System.Windows.Forms.ToolStripMenuItem mnu_TimKiem;
         private System.Windows.Forms.ToolStripMenuItem mnu_Thoat;
+        private System.Windows.Forms.ToolStripMenuItem báoCáoKhoaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnu_baocao_lop;
+        private System.Windows.Forms.ToolStripMenuItem mnu_baocao_hedt;
+        private System.Windows.Forms.ToolStripMenuItem mnu_baocao_sv;
     }
 }
 
